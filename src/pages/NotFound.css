@@ -1,0 +1,15 @@
+.not-found {
+  text-align: center;
+  padding: 140px 0;
+}
+.not-found h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(26px, 3.4vw, 34px);
+  margin: 0 0 12px 0;
+}
+.not-found p {
+  font-size: 15px;
+  color: var(--slate);
+  margin: 0 0 28px 0;
+}

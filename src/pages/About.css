@@ -1,0 +1,65 @@
+.about-hero h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 24px 0;
+  max-width: 640px;
+}
+
+.about-paragraph {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--slate);
+  max-width: 620px;
+  margin: 0 0 16px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.team-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.team-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--snow-2);
+  color: var(--pine-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+}
+
+.team-card h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0 0 6px 0;
+}
+
+.team-card p {
+  font-size: 13.5px;
+  color: var(--slate);
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

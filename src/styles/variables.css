@@ -1,0 +1,16 @@
+/* Design tokens shared across all components.
+   Change a value here and it updates everywhere it's used. */
+:root {
+  --snow: #eff1ec;
+  --snow-2: #e7eae4;
+  --ink: #1b2420;
+  --ink-soft: #2b342f;
+  --line: #c7cfc6;
+  --pine: #2f6f5e;
+  --pine-dark: #234f42;
+  --amber: #df9640;
+  --amber-dark: #c57f2e;
+  --slate: #55635b;
+  --radius: 10px;
+  --max-width: 1120px;
+}

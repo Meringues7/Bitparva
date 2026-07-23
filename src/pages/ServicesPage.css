@@ -1,0 +1,77 @@
+.services-hero h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(28px, 3.6vw, 38px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0;
+  max-width: 600px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.service-block {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+}
+
+.service-index {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  color: var(--amber-dark);
+}
+
+.service-content h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.service-description {
+  font-size: 15.5px;
+  color: var(--slate);
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0 0 18px 0;
+}
+
+.service-features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 24px;
+  max-width: 560px;
+}
+
+.service-features li {
+  font-size: 14px;
+  color: var(--ink-soft);
+  padding-left: 18px;
+  position: relative;
+}
+.service-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 1.5px;
+  background: var(--pine);
+}
+
+@media (max-width: 640px) {
+  .service-block {
+    grid-template-columns: 1fr;
+  }
+  .service-features {
+    grid-template-columns: 1fr;
+  }
+}

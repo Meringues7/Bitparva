@@ -1,0 +1,63 @@
+.work-hero h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(28px, 3.6vw, 38px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 14px 0;
+  max-width: 600px;
+}
+
+.work-subtext {
+  font-size: 15px;
+  color: var(--slate);
+  max-width: 520px;
+  margin: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  border-color: var(--pine);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -18px rgba(27, 36, 32, 0.35);
+}
+
+.project-category {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--pine-dark);
+}
+
+.project-card h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+
+.project-card p {
+  font-size: 14.5px;
+  color: var(--slate);
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
